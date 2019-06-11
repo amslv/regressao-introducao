@@ -1,13 +1,15 @@
 ---
 title: "Regressão Linear"
 author: "Nazareno Andrade"
-output: 
+output:
+  html_document:
+    df_print: paged
+    toc: yes
   html_notebook:
-    theme: readable
     fig_width: 7
-    toc: true
-    toc_float: true
-
+    theme: readable
+    toc: yes
+    toc_float: yes
 ---
 
 ```{r message=FALSE, warning=FALSE}
@@ -85,7 +87,7 @@ No olho:
 ```{r}
 ggplot(countyComplete, aes(x = hs_grad, y = poverty)) + 
   geom_point(alpha = 0.4, size = .8) + 
-  geom_abline(slope = 0, intercept = 20, color  = "red") 
+  geom_abline(slope = -0.8, intercept =  79, color  = "red") 
 ```
 
 Quantificando a qualidade do modelo:
